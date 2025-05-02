@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position과 z-index</title>
+    <style>
+        .bg {
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+            width: 1000px; height: 1000px;
+            background-image: url(./images/bg_grid.gif);
+            position: absolute; top: 3px; left: 0px; z-index: 1;
+        }
+        .red {
+            box-sizing: border-box;
+            border: 1px solid #aa0000;
+            background-color: #ff3030;
+            width: 4px; height: 1000px;
+            position: absolute; top: 3px; left: -2px; z-index: 2;
+        }
+        .grey {
+            background-color: #a0a0a0a0;
+            height: 200px; width: 650px;
+            position: absolute; top: 20px; left: 20px; z-index: 2;
+        }
+        .box {
+            box-sizing: border-box;
+            height: 100px; width: 250px;
+            font-weight: bold; padding: 10px;
+        }
+        .red2 {
+            background-color: #dc143c; font-weight: bold;
+            position: absolute; top: 20px; left: 20px; z-index: 3;
+        }
+        .green {
+            background-color: #00ff00; font-weight: bold;
+            position: absolute; top: 70px; left: 90px; z-index: 4;
+        }
+        .blue {
+            background-color: #1e90ff; font-weight: bold;
+            position: absolute; top: 160px; left: 120px; z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="grey"></div>
+        <div class="box red2">박스의 크기와 위치를 잘 살펴보아야 합니다.</div>
+        <div class="box green">박스의 포지션 속성을 바꿔가며 테스트해 보아야 합니다.</div>
+        <div class="box blue">포지션을 이해하기 위해서는 시험해보고 관찰해 보는 것이 절대적으로 필요합니다.</div>
+    </div>
+    <div class="red"></div>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 관련 스타일2</title>
+    <style>
+        /* .p1{text-align: start;}
+        .p2{text-align: center;}
+        .p3{text-align: justify;} */
+        /* start left 차이: 스타트는 언어별로 정렬하는 방향이 달라짐. left right는 이에 상관없음 */
+        /* .p1{text-align: left;}
+        .p2{text-align: center;}
+        .p3{text-align: justify;}
+        .p4{text-align: right;} */
+        .p1{line-height: 12px;}
+        .p2{line-height: 24px;}
+        .p3{line-height: 36px;}
+        .p4{line-height: 48px;}
+        .heading{
+            /* 글자를 세로 중앙으로 정렬하기 위해서 height, line height를 같은 값으로 */
+            width: 500px;
+            height: 100px;
+            line-height: 100px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+        .underline {text-decoration: underline;}
+        .overline {text-decoration: overline;}
+        .line-through {text-decoration: line-through;}
+        .atag {
+            color: black;
+            text-decoration: none;
+        }
+        .atag:hover {
+            text-decoration: underline;
+        }
+        /* text shadow: 글자에 그림자 설정
+        속성: 가로거리 세로거리 번짐정도 색상 */
+        .shadow1 {color: red; text-shadow: 2px 2px black;}
+        .shadow2 {text-shadow: 5px 5px 3px #ffa500;}
+        .shadow3 {color: #fff; text-shadow: 7px -7px 20px #000;}
+        
+        /* text-transform 영어의 대소문자 변경 */
+        .trans1 {text-transform: capitalize;}
+        .trans2 {text-transform: uppercase;}
+        .trans3 {text-transform: lowercase;}
+
+        .spacing1 {letter-spacing: 10px;}
+        .spacing2 {letter-spacing: 20px;}
+        .spacing3 {word-spacing: 10px;}
+        .spacing4 {word-spacing: 50px;}
+
+    </style>
+</head>
+<body>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+    <p class="spacing3">Java Script</p>
+    <p class="spacing4">Java Script</p>
+    <p>none</p>
+    <p class="shadow1 trans1">shadow1</p>
+    <p class="shadow2 trans2">shadow2</p>
+    <p class="shadow3 trans3">shadow3</p>
+    <p class="underline">underline</p>
+    <p class="overline">overline</p>
+    <p class="line-through">line-through</p>
+    <h1 class="heading">HTML</h1>
+    <p class="p1">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <p class="p2">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <p class="p3">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <p class="p4">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <a href="#" class="atag">a태그</a>
+</body>
+</html>

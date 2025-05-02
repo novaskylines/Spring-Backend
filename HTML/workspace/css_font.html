@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 관련 스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        /* font-family: 글꼴 설정 */
+        @import url(https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&display=swap);
+        @font-face {
+            font-family: 'NanumPenScript';
+            src: url(./Nanum_Pen_Script/NanumPenScript-Regular.ttf);
+        }
+        body{font-family: 'NanumPenScript', Courier, monospace;}
+
+        
+
+        .dongle-regular {
+            font-family: "Dongle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        /* 글자 크기는 기본 16픽셀
+        px: 픽셀, 고정크기
+        %: 부모의 크기를 기준
+        em: 부모의 크기를 1로 하고 그 기준으로 표기
+        rem: html의 크기를 1로 하고 그 기준으로 표기 */
+        h1{font-size: 40px;}
+        p{font-size: 20px;}
+        /* font-style: 기울임체로 표시
+        italic: 글꼴 안에 저장되어 있는 기울어진 글꼴
+        oblique: 정상 글꼴을 약간 기울지게 표현
+        normal: 기본값 */
+    </style>
+</head>
+<body>
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 레드향 이라 불린다.</p>
+    <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+    <p class="dongle-regular">일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+</body>
+</html>

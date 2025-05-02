@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 내장 객체</title>
+</head>
+<body>
+    <script>
+        // 이미 만들어져 있는 객체를 사용하는 방식.
+        // String / Date / Array / Math
+        let str = "안녕하세요.";
+        console.log(str, str.length)
+        console.log(str, str.includes("안녕"))
+        let phone = "010-1234-5678";
+        console.log(phone, phone.replace('-','/'))
+        console.log(phone, phone.replaceAll('-','/'))
+        let arr = [3,1,4,1,5,9,2,6,5,3,5,8,9,7]
+        console.log(arr.length);
+        // 메서드: 객체 안에 있는 함수
+        console.log(arr.sort()); // 파괴적 메서드: 실행되면 원본 데이터를 변경하는 메서드.
+        arr.reverse();
+        console.log(arr);
+
+        let now = new Date();
+        console.log(now)
+        let date = new Date(2025,1,1,10,11,20);
+        console.log(date)
+        console.log(now.toLocaleString());
+        console.log(now.toLocaleDateString());
+        let num = 3.987;
+        console.log(Math.floor(num));
+        let randomValue = Math.floor(Math.random()*1000);
+        console.log(randomValue)
+
+    </script>    
+</body>
+</html>

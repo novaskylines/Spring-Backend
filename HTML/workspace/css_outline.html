@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 250px; height: 100px; margin: 10px;}
+        /* border-style: 외곽선의 종류 설정 */
+        /* border-width: 외곽선의 두께 설정 */
+        /* border-color: 외곽선의 색깔 설정 */
+        .box1{border-style: solid; border-width: 2px 4px 6px 8px; border-color: black red green blue;}
+        .box2{border-style: dashed; border-width: 4px; border-color: red;}
+        .box3{border-style: dotted; border-width: 6px; border-color: green;}
+        .box4{border-style: double; border-width: 8px; border-color: blue}
+        /* border-radius: 외곽선을 둥글게 */
+        .box5{
+            border: 5px solid yellow;
+            border-radius: 15px;
+        }
+        /* hover: 커서 호버 시 스타일 */
+        /* 보더는 한쪽 방향만 (top right bottom left) 설정할 수도 있음 */
+        .box5:hover{
+            border-top-style: dashed;
+            border-radius: 10px 20px / 30px 40px;
+        }
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <img src="./images/salad.jpg" alt="salad">
+</body>
+</html>

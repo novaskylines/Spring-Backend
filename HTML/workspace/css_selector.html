@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자: 페이지에 있는 모든 태그를 대상으로 CSS를 적용 */
+        /* 페이지의 기본 스타일을 초기화할 때 사용 */
+        * {margin: 0; padding: 0;}
+        /* 타입 선택자: 특정 이름의 태그를 모두 적용하는 선택자 */
+        p {font-style: italic;}
+        /* 클래스 선택자
+        - .을 이름 앞에 사용하여 클래스 선택자로 설정.
+        - 여러 태그에서 사용 가능.
+        - 하나의 태그에서 여러개 사용 가능. */
+        .accent {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        .bg {
+            background-color: #ddd;
+        }
+        .bg {
+            background-color: beige;
+        }
+        /* 아이디 속성
+        - #으로 클래스 선택자 설정.
+        - id속성값은 중복사용 불가.*/
+        #container {
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        /* 그룹 선택자 
+        - ,를 이용해 선택자 나열.*/
+        h1, p, .accent {
+            text-align: center
+        }
+        /* CSS 우선순위
+        1. !important: 우선순위가 가장 높아 다른 어떤 CSS 설정도 무시
+        2. 인라인: 일반적으로 사용하지 않고 테스트처럼 잠깐 확인
+        3. 아이디: 자유롭게 사용 가능, 클래스보다 우선순위가 높아야 하는 경우
+        4. 클래스: CSS에서 가장 많이 쓰이는 것
+        5. 타입: 클래스보다 여러 태그에 사용해야 할 때 */
+    </style>
+</head>
+<body>
+    <!-- 크기를 가지지 않는 CSS를 적용하기 위한 태그 -->
+    <span>a</span>
+    <!-- 크기를 가지는 태그로 구조를 만들기 위해 설정 -->
+    <div id="container" style="background-color: aqua;">
+        <h1 class="accent bg">레드향</h1>
+        <p>껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로 ...</p>
+        <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+    </div>
+</body>
+</html>

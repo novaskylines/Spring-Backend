@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 스타일</title>
+    <style>
+        div, span {
+            margin: 10px; padding: 10px;
+            background-color: aqua;
+        }
+        /* inline <> block으로 변경 가능 */
+        /* display를 변경하지 많고 각자 맞는 태그를 쓰는 것을 권장 */
+        div {display: inline;}
+        span {display: block;}
+        /* 인라인 블럭: 가로세로 길이를 가진 인라인을 사용하고 싶을 때 */
+        div {display: inline-block;}
+        span {display: inline-block;}
+    </style>
+</head>
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+</body>
+</html>

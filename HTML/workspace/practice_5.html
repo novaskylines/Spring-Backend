@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="./practice_5_register.css">
+    <style>
+        tbody, td {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body id="container">
+    <h1>회원 가입을 환영합니다</h1>
+    <form action="#">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <table>
+                <tbody>
+                    <td><label for="id"><b>아이디</b></label></td>
+                    <td><input type="text" name="id" placeholder="4자 ~ 10자 사이, 공백없이" required></td>
+                </tbody>
+                <tbody>
+                    <td><label for="email"><b>이메일</b></label></td>
+                    <td><input type="email" name="email" required></td>
+                </tbody>
+                <tbody>
+                    <td><label for="pw"><b>비밀번호</b></label></td>
+                    <td><input type="password" name="pw" placeholder="문자와 숫자, 특수 기호 포함" required></td>
+                </tbody>
+                <tbody>
+                    <td><label for="pw2"><b>비밀번호 확인 </b></label></td>
+                    <td><input type="password" name="pw2" required></td>
+                </tbody>
+                <tbody>
+                    <td><label for="path"><b>가입 경로</b></label></td>
+                    <td>
+                        <select name="path">
+                            <option value="blog">블로그</option>
+                            <option value="search">검색</option>
+                            <option value="sns">SNS</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </td>
+                </tbody>
+                <tbody>
+                    <td><label for="memo"><b>메모</b></label></td>
+                    <td><textarea name="memo" cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea></td>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label><input type="radio" name="news" value="yes"> 메일 수신</label>
+            <label><input type="radio" name="news" value="no"> 메일 수신 안 함</label>
+        </fieldset>
+        <div id="buttons">
+            <button type="submit">가입하기</button>
+            <button type="reset">취소</button>
+        </div>
+    </form>
+</body>
+</html>

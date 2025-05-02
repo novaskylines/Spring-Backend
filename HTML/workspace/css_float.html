@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float 스타일</title>
+    <style>
+        img {float: right;}
+        /* float 설정 시 가로크기가 없다면 컨텐츠 영역만큼만 크기 설정 */
+        /* 부모태그가 자식태그의 공간을 제대로 인식하지 못함 */
+        .grey-box {background-color: grey; width: 400px; padding: 1rem;}
+        .red-box {background-color: red; float: left; width: 100px; height: 100px;}
+        .blue-box {background-color: blue; float: left; width: 100px; height: 100px;}
+        /* float이 끝나는 태그에 ::after를 사용해 grey box를 clear */
+        /* 태그의 데이터, 시작태그와 종료태그 사이의 데이터를 클리어 */
+        .grey-box::after {content:""; display: block; clear: both;}
+        
+    </style>
+</head>
+<body>
+    <div class="grey-box">
+        <div class="red-box">red-box</div>
+        <div class="blue-box">blue-box</div>
+    </div>
+    <div class="wrap">
+        <img src="./images/bg_tree.png" alt="나무">
+        <p>Lorem, ipsum dolor sit amet consectetur adipiscing elit. Corrupti ut dolor ratione blanditiis iste, harum fugit, soluta eum obcaecati, expedita perspiciatis quam culpa? Doloribus repellendus labore sed inventore iusto eveniet.</p>
+    </div>
+</body>
+</html>

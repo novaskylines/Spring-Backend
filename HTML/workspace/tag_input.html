@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hidden: 화면에는 보이지 않는 데이터만 저장하는 타입. submit 실행시 hidden 역시 전송 -->
+    <form action="#">
+        <input type="hidden" name="hidden" value="hiddendata">
+        <input type="text" name="id">
+        <input type="submit" name="submit">
+    </form>
+    <!-- enctype="multipart/form-data": 파일을 전송하려면 해야 하는 인코딩 -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" multiple>
+        <button>전송</button>
+    </form>
+    <form action="">
+        <input type="date" name="date">
+        <input type="month" name="month">
+        <input type="week" name="week">
+        <input type="time" name="time">
+        <input type="datetime-local" name="datetime-local">
+        <input type="submit" name="submit">
+        <input type="image" src="./images/login.png">
+        <!-- onclick: 자바스크립트를 실행하기 위한 속성 -->
+        <!-- window.open(파일명): 그 파일을 새 창에서 연다 -->
+        <input type="button" value="button" onclick="window.open('./tag_text.html')">
+        <button type="button" onclick="window.open('./tag_text.html')">버튼태그</button>
+    </form>
+    <form action="">
+        <!-- number: min~max에서 step 단위로 상/하강하는 input -->
+        <!-- range: min~max에서 step 단위로 선택 가능한 슬라이더 -->
+        <input type="number" name="num" min="2" max="10" step="2">
+        <input type="range" name="ran" min="2" max="10" step="2">
+        <input type="submit" name="submit">
+    </form>
+    <form action="">
+        <!-- radio: 여러 개의 선택지 중 하나만을 선택 -->
+        <!-- 동일한 name 속성을 사용하는 것으로 radio 태그를 하나로 묶어서 사용 -->
+        <label>선물 포장<input type="radio" name="gift" value="yes"></label>
+        <label>일반 포장<input type="radio" name="gift" value="no"></label>
+        <input type="submit" name="submit">
+    </form>
+    <form action="#">
+        <!-- search: X버튼이 생겨서 초기화 가능 -->
+        <input type="search" name="search">
+        <!-- URL 형식이 아닐 경우 에러 -->
+        <input type="url" name="url">
+        <!-- email 형식이 아닐 경우 에러 -->
+        <input type="email" name="email">
+        <!-- 기본 input이랑 차이가 없음 -->
+        <input type="tel" name="tel">
+        <!-- 부모 form의 action 실행 -->
+        <input type="submit" name="submit">
+    </form>
+    <form action="" method="GET">
+        <!-- checkbox: label에 묶인 텍스트를 클릭해 선택할 수도 있음 -->
+        <!-- value: 체크가 되었을 때 대신 value의 값을 전송 -->
+        <label>선물용3kg<input type="checkbox" name="check1" value="선물용3kg"></label>
+        <label>선물용5kg<input type="checkbox" name="check2" value="선물용5kg"></label>
+        <label>가정용3kg<input type="checkbox" name="check3" value="가정용3kg"></label>
+        <label>가정용5kg<input type="checkbox" name="check4" value="가정용5kg"></label>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

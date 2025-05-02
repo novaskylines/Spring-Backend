@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 2</title>
+    <style>
+        /* 모범답안과의 차이: th 역시 디자인에 포함해야 했음*/
+        table, td {
+            border: 1px solid #ccc;
+        }
+        td {
+            padding: 10px 20px;
+            /* 모범답안은 볼드를 사용하지 않음 */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>수습 국원 지원 양식</h1>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <!-- 모범답안은 150px를 썼음 -->
+            <col style="width: 220px;"> 
+        </colgroup>
+        <tr>
+            <td rowspan="3">개인정보</td>
+            <td>이름</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>학과/학번</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>지원 분야</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>

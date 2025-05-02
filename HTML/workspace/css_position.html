@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 스타일</title>
+    <style>
+        .box{height: 100px; width: 100px;}
+        .red-box{background-color: red;}
+        .green-box{background-color: green;}
+        .blue-box{background-color: blue;}
+
+        .relative {
+            /* relative: 자기 자신의 원래 위치에서 좌표 이동 */
+            /* top/right/bottom/left: 해당 방향으로부터 얼마나 멀어질 것인가 */
+            position: relative;
+            top: 100px; left: 100px;
+        }
+        .absolute {
+            /* absolute: 원래 위치와 상관 없이 부모 태그를 기준으로 좌표 이동 */
+            position: absolute;
+            /* left, right만 사용시 현재 위치에서 left나 right로 좌표이동 */
+            /* 원래 위치에 없는 것으로 간주해 아래의 태그가 위로 올라옴 */
+            left: 300px;
+            top: 100px;
+        }
+        .fixed {
+            /* fixed: 스크롤 관계없이 모니터를 기준으로 좌표 이동 */
+            position: fixed;
+            /* 좌표 설정 방식은 absolute와 동일 */
+            left: 100px; top: 100px;
+        }
+        .sticky {
+            /* sticky: 자신이 표시된 순간부터 없어질 때 까지 fixed로 전환 */
+            /* 옛날 브라우저(인터넷 익스플로어?)에서는 실행되지 않음 */
+            position: sticky;
+            /* 좌표이동 방식은 relative과 동일 */
+            left: 200px; top: 50px;
+        }
+        /* z-index: 정수값, z축(레이어) 설정 */
+        /* 큰게 앞으로, 작은게 뒤로 */
+        .z1 {position: relative; z-index: 1;}
+        .z2 {position: absolute; left: 50px; top: 1320px; z-index: 2;}
+        .z3 {position: relative; z-index: 3;}
+
+    </style>
+</head>
+<body>
+    <p>relative position</p>
+    <div class="box red-box"></div>
+    <div class="box green-box relative"></div>
+    <div class="box blue-box"></div>
+    <p>absolute position</p>
+    <div class="box red-box"></div>
+    <div class="box green-box absolute"></div>
+    <div class="box blue-box"></div>
+    <p>fixed position</p>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box fixed"></div>
+    <p>sticky position</p>
+    <div class="box red-box sticky"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+    <p>z-index</p>
+    <div class="box red-box z1"></div>
+    <div class="box green-box z2"></div>
+    <div class="box blue-box z3"></div>
+</body>
+</html>

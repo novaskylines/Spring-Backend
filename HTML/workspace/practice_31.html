@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보 게임</title>
+    <style>
+        #wrap {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .centerArea {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>
+            <img src="" alt="user" width="180px" height="180px">
+            <p></p>
+        </div>
+        <div class="centerArea">
+            <h3></h3>
+            <p>vs</p>
+            <div>
+                <button onclick="btn(0)">V</button>
+                <button onclick="btn(1)">X</button>
+                <button onclick="btn(2)">O</button>
+            </div>
+        </div>
+        <div>
+            <img src="" alt="computer" width="180px" height="180px">
+            <p></p>
+        </div>
+        <script>
+            let btn = (num) => {
+                const imgTag = document.querySelectorAll('img');
+                const pTag = document.querySelectorAll('p');
+                const h3Tag = document.querySelector('h3')
+                // 버튼을 클릭했을 때 -> 이미지 표시
+                const player = num;
+                if (num==0) {
+                    imgTag[0].src = "./images/가위.png";
+                    pTag[0].innerHTML = "가위"
+                } else if (num==1) {
+                    imgTag[0].src = "./images/바위.png"
+                    pTag[0].innerHTML = "바위"
+                } else {
+                    imgTag[0].src = "./images/보.png"
+                    pTag[0].innerHTML = "보"
+                }
+                                
+                // 컴퓨터도 랜덤으로 이미지 변경
+                // 0~2까지의 랜덤 값 저장 (0: 가위, 1: 바위, 2: 보)
+                const computer = Math.floor(Math.random()*3);
+                if (computer==0) {
+                    imgTag[1].src = "./images/가위.png";
+                    pTag[2].innerHTML = "가위"
+                } else if (computer==1) {
+                    imgTag[1].src = "./images/바위.png"
+                    pTag[2].innerHTML = "바위"
+                } else {
+                    imgTag[1].src = "./images/보.png"
+                    pTag[2].innerHTML = "보"
+                }
+
+                console.log(player, computer, player-computer)
+                
+                // 사람과 컴퓨터를 비교해 승리와 패배 로직
+                if (player-computer===-1 || player-computer===2) {
+                    h3Tag.innerHTML = "졌습니다"
+                } else if (player==computer) {
+                    h3Tag.innerHTML = "비겼습니다"
+                } else {
+                    h3Tag.innerHTML = "이겼습니다"
+                }
+            }
+            
+            
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 스타일</title>
+    <style>
+        @keyframes bgchange {
+            /* 시간에 대한 경과를 퍼센트.
+            보통 5~10개의 퍼센트로 설정한다 */
+            0%{background-color: red;}
+            33%{background-color: orange;}
+            66%{background-color: yellow;}
+            100%{background-color: green;}
+        }
+        div {
+            /* animation-name: 키 프레임 이름 */
+            animation-name: bgchange;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            /* 애니메이션이 종료된 후 상태
+            none: 원상태. forward: 100%. backward: 100%->0%. both:  */
+            animation-fill-mode: both;
+            /* 실행 횟수: infinite(무한반복) */
+            animation-iteration-count: 3;
+            /* animation-direction: normal: 0-100, reverse: 100-0, alternate: 0-100-0, alternate-reverse: 100-0-100 */
+            animation-direction: alternate-reverse;
+            width: 100px; height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* "초기화": HTML 화면 작성 시 제일 처음에 쓰는 것 */
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+        
+        div {width: 400px; height: 100px; border: 20px solid black;}
+        /* 외곽선을 포함해 width와 height 크기 설정 */
+        .border-box {box-sizing: border-box;}
+        /* 컨텐츠만이 width와 height 크기로 설정 */
+        .content-box {box-sizing: content-box;}
+        
+        div {
+            /* 가로 세로 흐림 번짐 색상 inset여부 */
+            box-shadow: 2px 2px 10px 3px #f00 inset;
+        }
+        .multishadow {
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px 5px red, 10px 10px 10px 10px orange, 15px 15px 15px 15px yellow, 20px 20px 20px 20px green, 25px 25px 25px 25px blue, 30px 30px 30px 30px indigo, 35px 35px 35px 35px purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">border-box</div>
+    <br>
+    <div class="content-box">content-box</div>
+    <br>
+    <div class="multishadow">shadow-box</div>
+    
+</body>
+</html>

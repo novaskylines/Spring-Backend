@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sqmove {
+            0% {
+                transform: translate(0px,0px);
+                background-color: red;
+                color: #0ff;
+            }
+            25% {
+                transform: translate(200px,0px);
+                background-color: green;
+                color: #f0f;
+            }
+            50% {
+                transform: translate(200px,200px);
+                background-color: yellow;
+                color: #00f;
+            }
+            75% {
+                transform: translate(0px,200px);
+                background-color: blue;
+                color: #ff0;
+            }
+            100% {
+                transform: translate(0px,0px);
+                background-color: red;
+                color: #0ff;
+            }
+        }
+        .square {
+            border: 1px solid #ccc;
+            width: 100px; height: 100px;
+        }
+        .square {
+            animation-name: sqmove;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="square">Animation...</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 연습문제</title>
+</head>
+<body>
+    <script>
+        // 0~100까지 5의 배수의 합
+        let sum1=0;
+        for (let i=0; i<=100; i+=5) {
+            sum1+=i;
+        }
+        console.log(sum1);
+        // 구구단 중 5단
+        for (let i=1; i<=9; i++) {
+            console.log(`5X${i}=${i*5}`)
+        }
+        // 2~9단
+        for (let i=2; i<=9; i++) {
+            for (let l=1; l<=9; l++) {
+                console.log(`${i}X${l}=${i*l}`)
+            }
+        }
+        // 삼각형 모양
+        for (let i=1; i<=9; i++) {
+            console.log('0'.repeat(i))
+        }
+        // 역삼각형 모양
+        
+        for (let i=9; i>0; i--) {
+            let star="";
+            for (let j=0; j<i; j++) {
+                star+="*"
+            }
+            console.log(star)
+        }
+
+        // A배열의 평균을 출력
+        let A = [70,60,55,75,95,90,80,80,85,100]
+        let sum2 = 0
+        for (let i=0; i<A.length; i++) {
+            sum2+=A[i];
+        }
+        console.log(sum2/A.length)
+
+        // 1900~2025년 윤년
+        for (let year=1900; year<=2025; year++) {
+            if (year%4!==0) {
+                continue;
+            }
+            else if (year%400===0) {
+                console.log(year)
+                continue;
+            }
+            else if (year%100===0) {
+                continue;
+            }
+            else {
+                console.log(year)
+                continue;
+            }
+        }
+    </script>    
+</body>
+</html>

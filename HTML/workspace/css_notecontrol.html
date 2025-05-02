@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 조작하기</title>
+    <style>
+        .active {
+            width: 200px; height: 200px;
+            background-color: cadetblue;
+            font-size: 30px;
+            border: 1px solid black;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <p id="title">Hello,
+        <span style="display: none;">JavaScript</span></p>
+    <div class="active">
+        클래스 속성 조작하기
+    </div>
+    <button data-active="on" onclick="activeON()">activeON</button>
+    <button data-active="off" onclick="activeOFF()">activeOFF</button>
+    <button data-active="toggle" onclick="activeTOGGLE()">activeTOGGLE</button>
+    <script>
+        // textcontent: title 안에 있는 모든 문자열 출력
+        console.log(document.querySelector("#title").textContent);
+        // innerText: title 바로 안에 있는 문자열만 출력 (자식은 X)
+        console.log(document.querySelector("#title").innerText);
+        // innerhtml: title 안의 모든 html과 문자열을 출력
+        console.log(document.querySelector("#title").innerHTML);
+        // 스타일 조작하기
+        // 코드를 간단하게 만들기 위해 태그를 변수에 저장
+        let title = document.querySelector("#title");
+        console.log(title);
+        // 인라인 스타일 방식으로 CSS 설정
+        title.style.color = "red";
+        // CSS 속성명에 -가 들어갈 경우 카멜표기법으로 변경하여 설정
+        // background-color -> backgroundColor
+        title.style.backgroundColor = "yellow";
+        title.style.fontSize = "20px";
+
+        // 클래스 속성 조작하기
+        const active = document.querySelector("div");
+        console.log(active);
+        active.classList.add("active");
+        function activeON(){
+            active.classList.add("active");
+        }
+        function activeOFF(){
+            active.classList.remove("active");
+        }
+        function activeTOGGLE(){
+            // add, remove가 자동으로 적용됨에 따라 제일 많이 사용
+            active.classList.toggle("active");
+        }
+        // 데이터 속성 조작하기
+        // data-속성명="저장하고 싶은 데이터"
+        // 데이터 속성은 태그에 특정 데이터를 저장하고 싶을 때 사용
+        const buttons = document.querySelectorAll("button");
+        console.log(buttons[0].dataset.active);
+        console.log(buttons[1].dataset.active);
+        console.log(buttons[2].dataset.active);
+
+        // 메서드로 속성 조작하기
+        const title2 = document.querySelector("#title");
+        // getAttribute : 속성값을 출력하는 메서드
+        console.log(title2.getAttribute("id"));
+        // setAttribute(속성명, 속성값) : 속성값을 설정하는 메서드
+        title2.setAttribute("class", "active");
+        // removeAttribute : 속성값을 지우는 메서드
+        title2.removeAttribute("class");
+
+    </script>    
+</body>
+</html>

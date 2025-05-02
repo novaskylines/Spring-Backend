@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 미리보기</title>
+</head>
+<body>
+    <div>
+        <input type="file" name="file" accept="image/*" onchange="handleImgChange()">
+    </div>
+    <div>
+        <img src="" alt="" width="300">
+    </div>
+    <script>
+        const handleImgChange = () => {
+            const imgFile = document.querySelector("[type='file']").files[0];
+            const imgTag = document.querySelector("img");
+            if(imgFile) {
+                // Filereader: Javascript 파일을 읽기위한 API. 어떤 일을 하는지 정도만 외워두자
+                const reader = new FileReader();
+                // Filereader를 실행할 때의 동작 설정
+                reader.onload = (e) => {
+                    // readAsDataURL 메서드가 실행되면 src에 파일데이터를 저장
+                    imgTag.src = e.target.result;
+                    // display CSS를 블럭으로 설정해 화면에 표시
+                    imgTag.style.display = 'block';
+                }
+                // read file as base64, reader.onload에 저장해 실행
+                reader.readAsDataURL(imgFile)
+            }else{
+                imgTag.src = "";
+                imgTag.style.display = "none";
+            }
+        }
+    </script>    
+</body>
+</html>

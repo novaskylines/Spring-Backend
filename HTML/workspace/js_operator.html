@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+        // 산술연산자 +-*/ % ** ++ --
+        // %: 나머지
+        let num = 5%2;
+        console.log(num);
+        // **: 거듭제곱
+        let num2 = 3**2;
+        console.log(num2);
+        let num3 = 10;
+        console.log(num3++, num2--);
+        // 대입 연산자: 변수에 값 저장
+        let value1 = 1;
+        value1 += 3;
+        console.log(value1);
+        // 비교 연산자
+        console.log(3==1);
+        console.log(1==1);
+        console.log(3!=1);
+        // >, <, >=, <=
+        // &&, ||
+        console.log(3!=1&&1==1);
+        console.log(1!=2||1!=1);
+        // 삼항 연산자: 조건식 ? true false
+        let score=90;
+        let grade=score>=90?'A+':'B';
+        console.log(grade);
+    </script>    
+</body>
+</html>

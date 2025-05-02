@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드 선택하기</title>
+</head>
+<body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+    <script>
+        // ID를 이용한 노드 선택하기
+        const e1 = document.getElementById("title");
+        console.log(e1);
+        e1.innerHTML = "title 수정";
+        // Class를 이용한 노드 선택하기
+        // ID와는 다르게 여러개 저장, 그러므로 대괄호로 몇 번째인지 파악
+        const e2 = document.getElementsByClassName("text");
+        console.log(e2);
+        e2.innerHTML = "텍스트 수정";
+        e2[0].innerHTML = "text 배열 0번 수정"
+        // TAG 이름을 노드로 선택
+        const e3 = document.getElementsByTagName("p");
+        console.log(e3);
+        e3[1].innerHTML = "text tag";
+        // queryselector(): CSS 선택자를 용한 노드 1개 선택
+        // class의 경우 여러개가 있으면 제일 위의 1개만 선택
+        const e4 = document.querySelector(".text");
+        console.log(e4);
+        // queryselectorall(): CSS 선택자에 해당하는 모든 노드 선택
+        const e5 = document.querySelectorAll(".text");
+        console.log(e5);
+        e5[0].innerHTML = "querySelectorAll로 변경";
+    </script>    
+</body>
+</html>

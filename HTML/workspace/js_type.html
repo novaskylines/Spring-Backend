@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 자료형</title>
+</head>
+<body>
+    <script>
+        let name = '홍길동';
+        let name2 = "이순신";
+        let escape = "\' \" \\";
+        alert("안녕하세요 저는 \"이순신\"입니다.\n오늘은 4월 3일 입니다.")
+        let num = 1;
+        let num2 = 1.0;
+        // let bool = True;
+        // let bool2 = False;
+        // undefined: 값이 설정되지 않은 변수
+        let d;
+        // null: 값이 없음을 의미
+        let nu = null;
+        // 객체 자료형: 여러가지 데이터를 묶거나 함수 형태의 데이터.
+        // 대부분 다루는 자료형은 객체
+        let scores = [100,90,80];
+        let subject = ['lang','math','eng'];
+        console.log(subject[0], subject[1], subject[2], scores[0], scores[1], scores[2]);
+        let studentScore = {koreanScore:80,englishScore:70,mathScore:60};
+        console.log(studentScore.koreanScore);
+        console.log(studentScore[koreanScore]);
+    </script>
+</body>
+</html>

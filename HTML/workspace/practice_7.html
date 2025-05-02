@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 800px;
+            outline: 1px solid black;
+            margin: 0 auto;
+            padding: 30px 40px;
+        }
+        table, tr, td {
+            /* border: 1px solid #ccc; */
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h1>배송방법</h1>
+            <hr>
+            <table>
+                <tr>
+                    <td rowspan="3" style="font-weight: bold; color: #3bd;">배송방법</td>
+                    <td><label><input type="radio" name="method" value="m1">일반택배</label></td>
+                    <td><label><input type="radio" name="method" value="m2">해외배송</label></td>
+                    <td><label><input type="radio" name="method" value="m3">안심택배</label></td>
+                </tr>
+                <tr>
+                    <td><label><input type="radio" name="method" value="m4">편의점픽업</label></td>
+                    <td colspan="2"><label><input type="radio" name="method" value="m5">중고매장 픽업</label></td>
+                </tr>
+                <tr>
+                    <td colspan="3">!편의점픽업, 해외배송, 업체배송의 경우 총알하루 배송이 적용되지 않습니다.</td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td rowspan="2" style="font-weight: bold; color: #3bd; text-align: center;">배송지</td>
+                    <td>
+                        <label><input type="radio" name="loc" value="l1">최근배송지</label>
+                        <button type="button">더보기</button>
+                        <label><input type="radio" name="loc" value="l2">주소록</label>
+                        <label><input type="radio" name="loc" value="l3">회원정보동일</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><input type="radio" name="loc" value="l4"> 새로입력</label></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">이름</td>
+                    <td><input type="text" name="name" required></td>                    
+                </tr>
+                <tr>
+                    <td rowspan="4" style="font-weight: bold; color: #3bd; text-align: center;">배송주소</td>
+                    <td>
+                        <input type="text" name="addr" required>
+                        <button type="button">주소찾기</button>
+                    </td>
+                </tr>
+                <tr><td><label for="addr1">도로명 주소</label><input type="text" name="addr1"></td></tr>
+                <tr>
+                    <td>
+                        <label for="addr2">지번 주소</label><input type="text" name="addr2"><button type="button">주소록에 추가</button>
+                    </td>
+                </tr>
+                <tr><td>주소/우편번호체계가 새롭게 변경되었습니다.<br>
+                    정확하고 빠른 배송을 위해 입력된 주소를 확인하시고 업데이트 해주시기 바랍니다.</td></tr>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">핸드폰</td>
+                    <td>
+                        <select name="phone11">
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>070</option>
+                        </select>
+                        - <input type="text" name="phone12" maxlength="4" size="2"> - <input type="text" name="phone13" maxlength="4" size="2">
+                        ! 연락처는 하나만 입력하셔도 결제가 가능합니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">일반전화</td>
+                    <td>
+                        <select name="phone21">
+                            <option>선택</option>
+                            <option>02</option>
+                            <option>051</option>
+                        </select>
+                        - <input type="text" name="phone22" maxlength="4" size="2"> - <input type="text" name="phone23" maxlength="4" size="2">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <h2>주문고객</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">이름</td>
+                    <td><input type="text" name="name2" required></td>                    
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">핸드폰</td>
+                    <td>
+                        <select name="phone31">
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>070</option>
+                        </select>
+                        - <input type="text" name="phone32" maxlength="4" size="2"> - <input type="text" name="phone33" maxlength="4" size="2">
+                        ! 연락처는 하나만 입력하셔도 결제가 가능합니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">일반전화</td>
+                    <td>
+                        <select name="phone41">
+                            <option>선택</option>
+                            <option>02</option>
+                            <option>051</option>
+                        </select>
+                        - <input type="text" name="phone42" maxlength="4" size="2"> - <input type="text" name="phone43" maxlength="4" size="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; color: #3bd; text-align: center;">이메일</td>
+                    <td><input type="text" name="email"></td>                    
+                </tr>
+            </table>
+            <button>제출</button>
+        </form>
+    </div>
+</body>
+</html>

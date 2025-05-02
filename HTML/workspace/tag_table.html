@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 관련 태그</title>
+    <style>
+        /* 태그 이름 */
+        table, th, td {
+            /* 외곽선 : 선의 굵기, 실선, 색상 설정 */
+            border : 1px solid #ccc;
+            /* 외곽선이 겹칠 경우 하나로 합침 */
+            border-collapse : collapse; 
+        }
+        caption, th, td {
+            /* padding: 상하 좌우 여백 */
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>    
+        <!-- caption: 테이블 제목 -->
+        <caption>선물용과 가정용 상품 구성</caption>
+        <!-- colgroup: 열을 묶어주는 태그, caption 바로 뒤에 사용 -->
+        <colgroup>
+            <col style="background-color: #ccc;">
+            <col>
+            <col style="width: 150px;">
+            <col style="width: 150px;">
+        </colgroup>
+        <thead>
+        <!-- tr: 행, 테이블 가로줄 -->
+            <tr>
+                <!-- th: 셀 헤더 -->
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <!-- td: 셀 데이터 -->
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+        </tbody>
+    
+    </table>
+
+    <table style="table-layout: fixed;">
+        <caption>2025.03</caption>
+        <colgroup>
+            <col style="color:red;">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6"></td>
+                <td>1<br>삼일절</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3<br>대체 휴일<br>남세자의 날</td>
+                <td>4</td>
+                <td>5<br>경칩</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8<br>국제 여성의 날<br>3/8 민주의 날</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14<br>화이트데이</td>
+                <td>15<br>315의거기념일</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19<br>상공의 날</td>
+                <td>20<br>춘분<br>국제 행복의 날</td>
+                <td>21<br>암예방의 날</td>
+                <td>22<br>어스아워(Earth Hour)<br>세계 물의 날</td>
+            </tr>
+            <tr>
+                <td>23<br>국제 강아지의 날</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28<br>서해수호의 날</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>31</td>
+                <td colspan="5"></td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

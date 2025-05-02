@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // 이미 만들어져 있는 함수들이 많이 있음; 자주 나오는 것들은 기억해두자
+        alert("메세지 창을 출력하는 함수 alert()")
+        prompt("입력창을 출력하는 prompt()")
+        // 함수의 정의
+        function fx(x) {
+            for (let i=1; i<=9; i++) {
+                console.log(x*i)
+            }
+        }
+        fx(1)
+        function pow(x,y) {
+            result = 1;
+            for (let i=0; i<y; i++) {
+                result = result*x            
+            }
+            return(result);
+        }
+        console.log(pow(4,5))
+        // 변수를 함수처럼 정의
+        const fx2 = function(x) {
+            for (let i=1; i<=9; i++) {
+                console.log(x*i)
+            }
+        }
+        // 함수의 호이스팅
+        hello();
+        function hello() {
+            console.log("Hello World!")
+        }
+
+    </script>    
+</body>
+</html>

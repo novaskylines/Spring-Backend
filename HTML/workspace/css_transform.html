@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 스타일</title>
+    <style>
+        div {
+            height: 100px; width: 100px;
+            background-color: red;
+            margin: 20px;
+            transition-duration: 1s;
+        }
+        .translate:hover {
+            /* 이동 */
+            transform: translate(100px,200px);
+        }
+        .scale:hover {
+            /* 크기 조정 */
+            transform: scale(2,3);
+            transform-origin: top left;
+        }
+        .skew:hover {
+            /* 기울이기 */
+            transform: skew(30deg, 30deg);
+            transform-origin: top left;
+        }
+        .rotate:hover {
+            /* 돌리기 */
+            transform: rotate(30deg);
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">translate</div>
+    <div class="scale">scale</div>
+    <div class="skew">skew</div>
+    <div class="rotate">rotate</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 관련 스타일</title>
+    <style>
+        div {
+            width: 600px; height: 600px;
+            background-color: aquamarine;
+            /* 이미지가 가로세로보다 작으면 반복해서 채움 */
+            background-image: url("./images/coffee.jpg");
+            
+            /* 이미지 반복 */
+            /* no-repeat: 반복하지 않음 */
+            /* background-repeat: no-repeat; */
+            /* repeat-x: 가로방향 반복 */
+            /* background-repeat: repeat-x; */
+            /* repeat-y: 세로방향 반복 */
+            /* background-repeat: repeat-y; */
+            /* repeat: 기본값 */
+            /* background-repeat: repeat; */
+            /* 이미지가 잘리지않게 크기 딱 맞춰서 크기 조정 */
+            /* background-repeat: round; */
+            /* 이미지가 잘리지 않게 크기 딱 맞춰서 간격 조정*/
+            /* background-repeat: space; */
+
+            /* background-size: (이미지가 배경보다 작을 경우) 이미지 크기를 조정하기 위해 사용하는 속성 */
+            /* auto: 기본값, 이미지 크기 유지 */
+            /* cover: 가로세로 비율을 유지하면서 확대해 화면을 꽉 채워줌 */
+            /* contain: 가로세로 비율을 유지하면서 배경 안에 들어가도록 최대한 확대 */
+            /* 너비 높이: 직접 이미지 크기 설정 */
+            /* background-size: 80px 50px; */
+            
+            /* background-position: 이미지를 특정 위치에 출력 */
+            /* background-position: 100%; */
+
+            width: 1280x; height: 800px;
+            /* attatchment: 스크롤 시 이미지 작동 방식.
+            local: 이미지와 웹브라우저 모두 스크롤됨.
+            fixed: 이미지와 브라우저 모두 고정,
+            scroll: 이미지는 고정되나 브라우저는 스크롤 */
+            background-attachment: scroll;
+            background-position: center;
+            background-image: url(./images/bg.jpg);
+
+            /* 단축속성: color image repeat position/size attatchment */
+            background: red url('./images/coffee.jpg') no-repeat center/100% 100% fixed;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

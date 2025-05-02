@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form: 텍스트박스나 체크박스 등을 감싸는 태그로, 데이터를 보내는 형식/방법을 설정 -->
+    <!-- action: 데이터를 보낼 위치를 설정 -->
+    <!-- method: GET이나 POST을 설정하여 데이터를 보내는 형식을 설정 -->
+    <!-- GET: 데이터를 주소창에 설정해서 보냄 -->
+    <!-- POST: 주소창에 데이터가 보이지 않도록 데이터를 전달 -->
+    <!--  -->
+    <!--  -->
+    <form action="./tag_text.html" method="GET">
+        <!-- name: 파라미터의 이름을 설정, 미설정시 전송 X -->
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <!-- submit: form의 action을 실행하는 버튼 생성 -->
+        <input type="submit" name="get submit">
+        
+
+    </form>
+    <form action="#" method="GET">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" name="hash submit">
+        
+
+    </form>
+    <form action="./tag_text.html" method="POST">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" name="POST submit">
+    </form>
+
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <!-- label 방법 1: 전체 감싸기 -->
+            <label>아이디<input type="text" name="id"></label>
+            <!-- label 방법 2: 비밀번호 생성 -->
+            <label for="pw">비밀번호</label>
+            <input id="pw" type="text" name="pw">
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
