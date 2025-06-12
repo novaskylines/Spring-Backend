@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca0f7fbf-542f-409f-91fa-6da50527a9ff" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/src/main/java/jsoup01/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/src/main/java/jsoup01/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/src/main/java/jsoup01/test02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Jsoup01/src/main/java/jsoup01/test02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/java/utils/JSFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/java/utils/JSFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/06Session/LoginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/06Session/LoginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/common/Link.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/MustHaveJSP/src/main/webapp/common/Link.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/.settings/org.eclipse.wst.server.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/catalina.policy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/catalina.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/catalina.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/catalina.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/tomcat-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/tomcat-users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Servers/Tomcat v10.1 Server at localhost-config/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/Index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/Tourist/src/main/webapp/Join.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/conf/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/conf/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/conf/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/conf/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/RELEASE-NOTES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/asf-logo-wide.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/bg-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/bg-middle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/bg-nav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/bg-upper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/tomcat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP/Workspace/apache-tomcat-10.1.40/webapps/ROOT/tomcat.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2yItcb5v5KyrsbbHsTcpiMKvLTF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/it/Documents/Spring-Backend/Spring/workspace/springex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;아티팩트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="ca0f7fbf-542f-409f-91fa-6da50527a9ff" name="변경" comment="" />
+      <created>1749533996202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749533996202</updated>
+      <workItem from="1749533997685" duration="15000" />
+      <workItem from="1749534020083" duration="1410000" />
+      <workItem from="1749544893615" duration="161000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

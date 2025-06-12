@@ -28,4 +28,15 @@
     <!--
     <Manager pathname="SESSIONS.ser" />
     -->
+
+	<ResourceLink 
+	    global="dbcp_myoracle" 
+	    name="dbcp_myoracle" 
+	    type="javax.sql.DataSource"
+	/>
+	<ResourceLink 
+	    global="dbcp_touristDB" 
+	    name="dbcp_touristDB" 
+	    type="javax.sql.DataSource"
+	/>
 </Context>

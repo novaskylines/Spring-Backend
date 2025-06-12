@@ -39,6 +39,11 @@
          UserDatabaseRealm to authenticate users
     -->
     <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" midIdle="5" name="dbcp_myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="musthave"/>
+    <Resource auth="Container" 
+    driverClassName="oracle.jdbc.OracleDriver" 
+    initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" midIdle="5" 
+    name="dbcp_touristDB" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="touristDB"/>
+    
     <!-- <Resource 
     auth="Container" 
     description="User database that can be updated and saved" 
@@ -133,7 +138,7 @@
              resources under the key "UserDatabase".  Any edits
              that are performed against this UserDatabase are immediately
              available for use by the Realm.  -->
-        <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
+        <!-- <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="dbcp_myoracle"/> -->
       </Realm>
 
       <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
@@ -149,7 +154,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/><Context docBase="Tourist" path="/Tourist" reloadable="true" source="org.eclipse.jst.jee.server:Tourist"/></Host>
+      <Context docBase="Tourist" path="/Tourist" reloadable="true" source="org.eclipse.jst.jee.server:Tourist"/><Context docBase="MustHaveJSP" path="/MustHaveJSP" reloadable="true" source="org.eclipse.jst.jee.server:MustHaveJSP"/><Context docBase="Tourist_mvc_model2" path="/Tourist_mvc_model2" reloadable="true" source="org.eclipse.jst.jee.server:Tourist_mvc_model2"/><Context docBase="Tourist_Exam" path="/Tourist_Exam" reloadable="true" source="org.eclipse.jst.jee.server:Tourist_Exam"/></Host>
     </Engine>
   </Service>
 </Server>

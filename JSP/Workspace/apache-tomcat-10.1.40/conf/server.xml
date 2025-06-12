@@ -40,6 +40,13 @@
     <!-- Editable user database that can also be used by
          UserDatabaseRealm to authenticate users
     -->
+	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" midIdle="5" name="dbcp_myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="musthave"/>
+
+	    <Resource auth="Container" 
+    driverClassName="oracle.jdbc.OracleDriver" 
+    initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" midIdle="5" 
+    name="dbcp_touristDB" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="touristDB"/>
+
     <Resource name="UserDatabase" auth="Container"
               type="org.apache.catalina.UserDatabase"
               description="User database that can be updated and saved"
